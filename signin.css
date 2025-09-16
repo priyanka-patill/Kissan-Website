@@ -1,0 +1,125 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e6f7eb, #f9fff9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #009c25;
+  color: white;
+}
+.navbar .logo { font-size: 24px; font-weight: bold; }
+.navbar .nav-links { display: flex; list-style: none; gap: 25px; }
+.navbar .nav-links li a {
+  color: white; text-decoration: none; font-size: 16px; transition: 0.3s;
+}
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Sign In Container */
+.signin-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.signin-box {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.signin-box h1 {
+  color: #009c25;
+  margin-bottom: 10px;
+}
+.signin-box .subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Input Groups */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.input-group input:focus {
+  border-color: #009c25;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0,156,37,0.2);
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px;
+  font-size: 13px;
+}
+.options a {
+  color: #009c25;
+  text-decoration: none;
+}
+.options a:hover { text-decoration: underline; }
+
+/* Sign In Button */
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background: #009c25;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signin-btn:hover { background: #00791d; }
+
+/* Sign Up Link */
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.signup-link a {
+  color: #009c25;
+  text-decoration: none;
+  font-weight: bold;
+}
+.signup-link a:hover { text-decoration: underline; }

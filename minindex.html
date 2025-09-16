@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INTERFACE PAGE</title>
+  <link rel="stylesheet" href="ministyle.css" />
+</head>
+<body>
+  <!-- top navbar (kept simple and consistent with your site) -->
+  <nav class="navbar">
+    <div class="logo">🌱 Kissan Connect</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="login-box">
+      <div class="brand">
+        <div class="brand-title">🌾 Kissan Connect</div>
+        <p class="subtitle">Sign in to manage your orders, addresses and more</p>
+      </div>
+
+      <form action="kissan.html" method="get" autocomplete="on">
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="e.g. customer@email.com" required />
+
+        <label for="password">Your Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" name="password" placeholder="e.g. ********" required />
+          <button type="button" id="togglePassword" aria-label="Show password">Show</button>
+        </div>
+
+        <div class="form-row">
+          <label class="remember">
+            <input type="checkbox" name="remember" /> Remember me
+          </label>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Log In</button>
+
+        <div class="login-links">
+          <a href="signup.html">Don't have an account? Sign up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- tiny JS to toggle password visibility -->
+  <script>
+    (function(){
+      const btn = document.getElementById('togglePassword');
+      const pw  = document.getElementById('password');
+      btn.addEventListener('click', function(){
+        if (pw.type === 'password') { pw.type = 'text'; btn.textContent = 'Hide'; }
+        else { pw.type = 'password'; btn.textContent = 'Show'; }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+  min-height: 100vh;
+  background-color: #FDF6EC;
+  background-image: url("farm image.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%; 
+    background-color: #0b3d0b; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px; 
+    position: sticky;
+    top: 0;       
+    z-index: 1000; 
+}
+.navbar .logo { font-weight: 700; font-size: 20px; color: white; }
+.navbar .nav-links { list-style: none; display: flex; gap: 18px; }
+.navbar .nav-links a { color: white; text-decoration: none; font-size: 15px; }
+.navbar .nav-links a:hover { text-decoration: underline; }
+
+/* Container centers the card */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  width: 100%;
+}
+
+/* Login card */
+.login-box{
+  background: rgba(255,255,255,0.95);
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  width: 510px;
+  max-width: 94%;
+  text-align: left;
+}
+
+/* Brand area */
+.brand { text-align: center; margin-bottom: 18px; }
+.brand-title { font-size: 22px; color: #009c25; font-weight: 700; margin-bottom: 6px; }
+.subtitle { color: #555; font-size: 14px; margin-top: 4px; }
+
+/* Labels & inputs */
+.login-box label{
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"]{
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: box-shadow .18s ease, border-color .18s ease;
+}
+.login-box input:focus{
+  border-color: #009c25;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,156,37,0.12);
+}
+
+/* password wrap (to keep the toggle inside) */
+.password-wrap {
+  position: relative;
+}
+.password-wrap button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #009c25;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.password-wrap button:focus { outline: none; }
+
+/* row with remember + forgot link */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.remember { font-size: 14px; color: #444; }
+.remember input { margin-right: 8px; transform: translateY(1px); }
+.forgot { color: #009c25; text-decoration: none; font-size: 14px; }
+.forgot:hover { text-decoration: underline; }
+
+/* main submit button */
+.btn{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #009c25;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background .18s ease, transform .08s ease;
+}
+.btn:hover { background: #00791c; transform: translateY(-1px); }
+
+/* small links under form */
+.login-links {
+  margin-top: 18px;
+  text-align: center;
+}
+.login-links a {
+  color: #009c25;
+  text-decoration: none;
+  font-size: 14px;
+}
+.login-links a:hover { text-decoration: underline; }
+
+/* Responsive tweaks */
+@media (max-width: 520px){
+  .login-box { padding: 22px; width: 96%; }
+  .brand-title { font-size: 18px; }
+  .subtitle { font-size: 13px; }
+  .navbar .nav-links { display: none; } /* keep navbar compact on mobile */
+}

@@ -1,0 +1,103 @@
+*{
+    background-color: #d8f3dc;
+    margin:0;
+    border:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+   height: 80px;
+    background-color:#0F1111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+}
+#hero-dynamic{
+    background-image: url("https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/BannerImage/20250831222940Free%20Delivery%20Web%20Story.jpg?tr=f-webp");
+    height:400px;
+    background-size: cover;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+} 
+.hero-dynamic-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+.hero-dynamic-arrow.left {
+    left: 20px;
+}
+.hero-dynamic-arrow.right {
+    right: 20px;
+}
+
+h1 {
+    color: #0F1111;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+#hero-box {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   /* allows multiple rows */
+    margin: 20px auto;
+    max-width: 1200px; /* keeps layout neat on big screens */
+}
+
+.hero-boxes {
+    height: 380px;
+    width: 315px;
+    margin: 20px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.hero-boxes h2 {
+    font-size: 25px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.hero-box-img {
+    border: 1px solid #fffffc;
+    height: 280px;
+    margin: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+#free-delivery{
+    background-image: url("https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/BannerImage/20250901210929Free%20Delivery%20Web%20ad%20banner.jpg?tr=f-webp");
+    background-size: cover;
+    height:200px;
+    
+    background-color: aqua;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+

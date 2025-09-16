@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+   height: 80px;
+    background-color:#0F1111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+}
+#hero-dynamic{
+    background-image: url("https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/BannerImage/20250831222940Free%20Delivery%20Web%20Story.jpg?tr=f-webp");
+    height:400px;
+    background-size: cover;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    position: relative;
+    width: 100%;
+    /*overflow: hidden;*/
+} 
+.hero-dynamic-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+.hero-dynamic-arrow.left {
+    left: 20px;
+}
+.hero-dynamic-arrow.right {
+    right: 20px;
+}
+
+h1 {
+    color: #0F1111;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+#hero-box {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    max-width: 1200px; 
+}
+
+.hero-boxes {
+    height: 380px;
+    width: 315px;
+    margin: 20px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.hero-boxes h2 {
+    font-size: 25px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.hero-box-img {
+    border: 1px solid #fffffc;
+    height: 280px;
+    margin: 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+      box-shadow: 0 6px 50px rgba(0, 0, 0, 0.2);
+     
+}
+#free-delivery{
+    background-image: url("https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/BannerImage/20250901210929Free%20Delivery%20Web%20ad%20banner.jpg?tr=f-webp");
+    background-size: cover;
+    height:200px;
+    
+    background-color: aqua;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+.navbar {
+    width: 100%; 
+    background-color: #0b3d0b; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px; 
+    position: sticky;
+    top: 0;       
+    z-index: 1000; 
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.logo span {
+    color: white;
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+
+.nav-links a {
+    font-size: 22px;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #90ee90; 
+}
+#m {
+    background-color: #d8f3dc; 
+    padding: 100px 50px;
+    min-height: 100vh;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0b3d0b; 
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #90ee90; 
+}
+/* 🔍 Search bar styles */
+.search-bar {
+  flex: 1;                     /* stretch to fill space between logo & links */
+  display: flex;
+  margin: 0 40px;              /* space left and right */
+}
+
+.search-bar input {
+  flex: 1;                     /* make input expand */
+  min-width: 400px;            /* don’t shrink too small */
+  padding: 14px 20px;          /* tall input */
+  font-size: 18px;             /* big text */
+  border: none;                /* clean look */
+  outline: none;
+  border-radius: 25px 0 0 25px; /* round left corners */
+}
+
+.search-bar button {
+  padding: 14px 24px;          /* same height as input */
+  font-size: 18px;             /* big icon/text */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0; /* round right corners */
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+.footer {
+  background-color: #0b3d0b;
+  color: white;
+  padding: 30px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; 
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.footer-contact {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-contact h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 6px;
+}
+
+.footer a {
+  color: #90ee90;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+#abtus{
+    font-size: 80px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #E63946;
+}
+#aboutus{
+    background-color: #fffffc;
+    border-radius: 70px;
+    
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 120px 80px 80px 80px;
+    overflow: visible;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#aboutus p {
+    padding: 100px 50px 100px 50px;
+}
+
